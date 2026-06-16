@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Пансионат для пожилых людей</title>
+<title>Пансионат «Дом»</title>
 
 <style>
 
@@ -15,7 +15,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 background:#f7f7f4;
 color:#222;
 }
@@ -43,6 +43,12 @@ margin-left:25px;
 text-decoration:none;
 color:#333;
 font-weight:500;
+}
+
+.phone{
+font-size:20px;
+font-weight:bold;
+color:#2f6b3f;
 }
 
 .hero{
@@ -125,29 +131,48 @@ font-size:18px;
 margin-bottom:10px;
 }
 
-@media(max-width:900px){
-
-header{
-padding:20px;
+.homes{
+padding:80px 8%;
+background:white;
 }
 
-nav{
-display:none;
+.homes h2{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
 }
 
-.hero{
-flex-direction:column;
-padding:40px 20px;
+.home-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
-.hero-text h1{
-font-size:38px;
+.home-card{
+background:#f7f7f4;
+padding:30px;
+border-radius:20px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
-.hero-text p{
+.home-card h3{
+margin-bottom:10px;
+font-size:28px;
+}
+
+.home-card p{
+margin-bottom:20px;
+color:#666;
 font-size:18px;
 }
 
+.home-card button{
+background:#2f6b3f;
+color:white;
+border:none;
+padding:12px 24px;
+border-radius:10px;
+cursor:pointer;
 }
 
 .help-section{
@@ -183,19 +208,35 @@ font-size:24px;
 font-size:16px;
 line-height:1.5;
 color:#666;
-}.card p{
-font-size:16px;
-line-height:1.5;
-color:#666;
 }
 
-.phone{
-font-size:20px;
-font-weight:bold;
-color:#2f6b3f;
+@media(max-width:900px){
+
+header{
+padding:20px;
 }
 
-</style></style>
+nav{
+display:none;
+}
+
+.hero{
+flex-direction:column;
+padding:40px 20px;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+.hero-text p{
+font-size:18px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
@@ -213,11 +254,11 @@ color:#2f6b3f;
 <a href="#">Отзывы</a>
 <a href="#">Контакты</a>
 </nav>
+
 <div class="phone">
-
 8 (8422) 22-99-22
-
 </div>
+
 </header>
 
 <section class="hero">
@@ -249,7 +290,6 @@ color:#2f6b3f;
 
 <div class="hero-image">
 <img src="B843FC6D-7382-4EC6-A495-08F70C536799.png">
-  
 </div>
 
 </section>
@@ -278,9 +318,7 @@ color:#2f6b3f;
 
 </section>
 
-<section class="help-section">
-
-<h2>Кому мы помогаем</h2><section class="homes">
+<section class="homes">
 
 <h2>Наши пансионаты</h2>
 
@@ -302,6 +340,10 @@ color:#2f6b3f;
 
 </section>
 
+<section class="help-section">
+
+<h2>Кому мы помогаем</h2>
+
 <div class="cards">
 
 <div class="card">
@@ -321,7 +363,7 @@ color:#2f6b3f;
 
 <div class="card">
 <h3>Лежачие пациенты</h3>
-<p>Профилактика осложнений и помощь 24/7.</
+<p>Профилактика осложнений и помощь 24/7.</p>
 </div>
 
 <div class="card">
@@ -336,5 +378,7 @@ color:#2f6b3f;
 
 </div>
 
-</section></body>
+</section>
+
+</body>
 </html>
