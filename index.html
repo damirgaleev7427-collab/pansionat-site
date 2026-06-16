@@ -3,73 +3,230 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Пансионат для пожилых людей</title>
 
 <style>
-body{
+
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f8f8f8;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f7f7f4;
+color:#222;
+}
+
+header{
+background:white;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#2f5f34;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:500;
 }
 
 .hero{
-height:100vh;
-background:url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1800') center/cover;
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
+justify-content:space-between;
+padding:80px 8%;
+min-height:85vh;
+gap:50px;
 }
 
-.overlay{
-background:rgba(0,0,0,0.5);
-padding:50px;
-border-radius:20px;
+.hero-text{
+max-width:600px;
 }
 
-h1{
-font-size:60px;
-margin-bottom:20px;
+.hero-text h1{
+font-size:56px;
+line-height:1.1;
+margin-bottom:25px;
 }
 
-p{
+.hero-text p{
 font-size:22px;
-max-width:700px;
-margin:auto;
+color:#666;
+line-height:1.5;
+margin-bottom:35px;
 }
 
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#3d7a3d;
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn-green{
+background:#2f6b3f;
 color:white;
+padding:18px 35px;
+border-radius:12px;
 text-decoration:none;
-border-radius:50px;
-font-size:20px;
+font-size:18px;
 }
-</style>
 
+.btn-white{
+background:white;
+color:#333;
+padding:18px 35px;
+border-radius:12px;
+text-decoration:none;
+border:1px solid #ddd;
+font-size:18px;
+}
+
+.hero-image img{
+width:100%;
+max-width:650px;
+border-radius:25px;
+}
+
+.features{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:30px;
+flex-wrap:wrap;
+}
+
+.feature{
+background:white;
+padding:20px;
+border-radius:15px;
+width:220px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.feature h3{
+font-size:18px;
+margin-bottom:10px;
+}
+
+@media(max-width:900px){
+
+header{
+padding:20px;
+}
+
+nav{
+display:none;
+}
+
+.hero{
+flex-direction:column;
+padding:40px 20px;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+.hero-text p{
+font-size:18px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-<section class="hero">
-<div class="overlay">
+<header>
 
-<h1>Пансионат для пожилых людей</h1>
+<div class="logo">
+🏠 Пансионат «Дом»
+</div>
+
+<nav>
+<a href="#">О нас</a>
+<a href="#">Услуги</a>
+<a href="#">Стоимость</a>
+<a href="#">Отзывы</a>
+<a href="#">Контакты</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+Пансионат для пожилых людей в Ульяновске
+</h1>
 
 <p>
-Круглосуточный уход, контроль лекарств,
-помощь после инсульта и при деменции.
+Круглосуточный уход, помощь после инсульта,
+при деменции и возрастных заболеваниях.
 </p>
 
-<a href="#" class="btn">
+<div class="buttons">
+
+<a href="#" class="btn-green">
 Записаться на экскурсию
 </a>
 
+<a href="#" class="btn-white">
+Узнать стоимость
+</a>
+
 </div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200">
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="feature">
+<h3>Круглосуточный уход</h3>
+<p>Забота 24 часа в сутки</p>
+</div>
+
+<div class="feature">
+<h3>Контроль лекарств</h3>
+<p>Прием по расписанию</p>
+</div>
+
+<div class="feature">
+<h3>Пятиразовое питание</h3>
+<p>Сбалансированное меню</p>
+</div>
+
+<div class="feature">
+<h3>Заселение за 1 день</h3>
+<p>Быстрое оформление</p>
+</div>
+
 </section>
 
 </body>
